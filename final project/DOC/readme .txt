@@ -1,0 +1,52 @@
+----------DUT vhdl files------------
+------------------------------------
+-- IFETCH.vhd
+-- IDECODE.vhd
+-- CONTROL.vhd
+-- EXECUTE.vhd
+-- DMEMOEY.vhd
+-- WRITEBACK.vhd
+-- shifter.vhd
+-- aux_package.vhd
+-- MIPS.vhd
+-- GPIO.vhd
+-- GPO_interface.vhd
+-- Timer.vhd
+-- INT_CTL.vhd
+-- TOP.vhd
+-- FPGA_Conc.vhd
+------------------------------------
+
+------Functional Descriptions-------
+------------------------------------
+-IFETCH.vhd
+-- purpose - fetches instruction from unstarction memory.
+-IDECODE.vhd
+-- purpose - analyzis instruction, gets data from reguster, sends opcode to control unit and preforms branching and shifung when nedded.
+-CONTROL.vhd
+-- purpose - outputs control lines according to opcode.
+-EXECUTE.vhd
+-- purpose - executs alu etc.
+-DMEMOEY.vhd
+-- purpose - gets data from memory.
+-WRITEBACK.vhd
+-- purpose - writes back data to registers.
+-shifter.vhd
+-- purpose - preforms shift for the alu.
+-aux_package.vhd:
+-- purpose - includes all entities, for easier coding.
+-MIPS.vhd:
+-- purpose - a complete processor.
+-GPIO.vhd
+-- purpose - peripheral Memory components.
+-GPO_interface.vhd
+-- purpose - the interface for implementing the GPIO elements.
+-Timer.vhd
+-- purpose - peripheral component for PWM and timer interrupts.
+-INT_CTL.vhd
+-- purpose - control for interrupts.
+-TOP.vhd
+-- purpose - Top entity for connecting all components.
+-FPGA_Conc.vhd
+-- purpose - connection to FPGA HEX, LEDS, etc.
+---------------------------------------
