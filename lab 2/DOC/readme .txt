@@ -1,0 +1,21 @@
+----------DUT vhdl files------------
+------------------------------------
+-- aux_package.vhd
+-- top.vhd
+------------------------------------
+
+------Functional Descriptions-------
+------------------------------------
+-aux_package.vhd:
+-- purpose - includes all entities, for easier coding.
+
+-top.vhd:
+-- purpose - outputs a dynamic N-modulo counter, N is growing dynamically each counting round
+--	     untill it reaches the UpperBound value and starts from the beginning.
+-- input - rst: reset, clk: clock, upperBound: top bound where counting will restart.
+-- output- countOut.
+-- function - given a certain upperBound, the slow counter will count until reaching the upperbound,
+--	      and at the same time, the fast counter will output the counting from zero
+--	      to the slow counter current value, and so on.
+--	      if the rst flag is up it will restart the counting from zero.
+---------------------------------------
