@@ -1,0 +1,34 @@
+----------DUT vhdl files------------
+------------------------------------
+-- IFETCH.vhd
+-- IDECODE.vhd
+-- CONTROL.vhd
+-- EXECUTE.vhd
+-- DMEMOEY.vhd
+-- WRITEBACK.vhd
+-- shifter.vhd
+-- aux_package.vhd
+-- MIPS.vhd
+------------------------------------
+
+------Functional Descriptions-------
+------------------------------------
+-IFETCH.vhd
+-- purpose - fetches instruction from unstarction memory.
+-IDECODE.vhd
+-- purpose - analyzis instruction, gets data from reguster, sends opcode to control unit and preforms branching and shifung when nedded.
+-CONTROL.vhd
+-- purpose - outputs control lines according to opcode.
+-EXECUTE.vhd
+-- purpose - executs alu etc.
+-DMEMOEY.vhd
+-- purpose - gets data from memory.
+-WRITEBACK.vhd
+-- purpose - writes back data to registers.
+-shifter.vhd
+-- purpose - preforms shift for the alu.
+-aux_package.vhd:
+-- purpose - includes all entities, for easier coding.
+-MIPS.vhd:
+-- purpose - a complete processor.
+---------------------------------------
